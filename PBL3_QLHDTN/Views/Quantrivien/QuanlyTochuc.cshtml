@@ -1,0 +1,213 @@
+﻿﻿@{
+    Layout = "~/Views/Shared/_layoutQTV.cshtml";
+}
+@model List<PBL3_QLHDTN.Models.Tochuc>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <base href="https://localhost:7196/" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quản lý tổ chức</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Dẫn đường link đến các font chữ sử dụng trong trang -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inder:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleTaoHD.css">
+</head>
+<body>
+    <form action="/Quantrivien/QuanlyTochuc" method="post">
+        <div class="container">
+            <div class="retangle1">
+                <select class="cbbtinhtrang" id="cbbtinhtrang" name="cbbtinhtrang">
+                    <option disabled selected hidden>Trạng thái tài khoản</option>
+                    <option value="false">Đã bị khoá</option>
+                    <option value="true">Đang hoạt động</option>
+                </select>
+
+                <input type="text" class="tktentochuc" name="tentc" placeholder="Nhập tên tổ chức">
+
+                <button type="submit" class="hienthi" id="hienthi" name="hienthi">Hiển thị</button>
+            </div>
+            <div class="dstochuc">
+                <table class="table1">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tên tổ chức</th>
+                            <th>Email</th>
+                            <th>Địa chỉ</th>
+                            <th><a class="xem">Xem thông tin</a></th>
+                        </tr>
+                    </thead>
+                    @if (Model != null)
+                    {
+                        <tbody>
+
+                            @foreach (var items in Model)
+                            {
+                                <tr>
+                                    <td>@items.Idtochuc</td>
+                                    <td>@items.Ten</td>
+                                    <td>@items.Email</td>
+                                    <td>@items.Diachi</td>
+                                    <td><a href="@Url.Action("chitietTochuc", "Quantrivien", new { id = items.Idtochuc })">Chi tiết</a></td>
+                                </tr>
+                            }
+                        </tbody>
+                    }
+                </table>
+            </div>
+
+        </div>
+    </form>
+    <p class="TB">
+        @ViewBag.thongbao
+    </p>
+
+</body>
+<style>
+    .TB {
+        position: absolute;
+        top: 300px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative; /* Cần thiết để sử dụng position absolute cho các phần tử con */
+        height: 1500px;
+    }
+
+
+    .retangle1 {
+        position: absolute;
+        top: 160px;
+        left: 0px;
+        height: 71px;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(118, 234, 150, 0.36);
+    }
+
+    .cbbtinhtrang {
+        position: absolute;
+        left: 76px;
+        top: 15px;
+        font-size: 16px;
+        height: 39px;
+        wight: 174px;
+        background-color: rgba(118, 234, 150, 0.85);
+    }
+
+    .cbbgioitinh {
+        position: absolute;
+        left: 286px;
+        top: 177px;
+        font-size: 16px;
+        height: 39px;
+        wight: 174px;
+        background-color: rgba(118, 234, 150, 0.85);
+    }
+
+
+
+    .hienthi {
+        position: absolute;
+        left: 660px;
+        top: 15px;
+        height: 39px;
+        wight: 138px;
+        font-size: 22px;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .tktentochuc {
+        position: absolute;
+        left: 300px;
+        top: 15px;
+        width: 300px;
+        height: 37px;
+        font-size: 20px;
+    }
+
+
+
+    .dstochuc {
+        position: absolute;
+        top: 273px;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 700px;
+        overflow-y: scroll;
+        font-size: 16px;
+    }
+
+
+    .table1 {
+        border-collapse: collapse; /* Đảm bảo các ô không được tách biệt */
+        width: 800px;
+    }
+
+    .dstochuc th, .dstochuc td {
+        padding: 6px 10px; /* Thêm padding cho các ô */
+        text-align: center; /* Căn giữa văn bản trong ô */
+        border: 1px solid #ddd; /* Đường viền cho các ô */
+        height: 50px; /* Thiết lập chiều cao cho các hàng */
+    }
+
+    .dstochuc th {
+        background-color: #f2f2f2; /* Màu nền cho hàng tiêu đề */
+    }
+
+    .dstochuc tr:nth-child(even) {
+        background-color: #f9f9f9; /* Màu nền cho các hàng chẵn */
+    }
+
+    .dstochuc tr:hover {
+        background-color: #ddd; /* Màu nền khi hover trên hàng */
+    }
+
+    .dstochuc th, .dstochuc td {
+        border: 1px solid #ddd; /* Đường viền cho các ô */
+    }
+
+    .lb1 {
+        position: absolute;
+        left: 99px;
+        top: 784px;
+        width: 413px;
+        height: 43px;
+        font-size: 16px;
+    }
+
+    .lb2 {
+        font-size: 40px;
+        position: absolute;
+        left: 550px;
+        top: 1000px;
+    }
+
+    .huy {
+        font-size: 30px;
+        color: red;
+    }
+</style>

@@ -1,0 +1,143 @@
+﻿﻿
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Baloo:wght@400&display=swap" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" />
+</head>
+<body>
+    <header>
+        <div class="khunghead">
+            <div class="image_logo">
+                <img src="https://www.hasfarmgreens.com/wp-content/uploads/2021/09/12-icon-HFG_FA-09.png" alt=" " width="105px" height="99px" />
+            </div>
+            <label class="together">Together</label>
+            <div style="margin-left: 800px;">
+                <a class="xembaocao" style="margin-right: 100px;" href="https://localhost:7196/Quantrivien/Xembaocao">
+                    Xem báo cáo
+                </a>
+                <div class="quanly" style="margin-right: 100px;">
+                    Quản lý người dùng
+                    <ul class="Sub">
+                        <li><a href="https://localhost:7196/Quantrivien/QuanlyTochuc">Quản lý tổ chức</a></li>
+                        <li><a href="https://localhost:7196/Quantrivien/QuanlyCanhan">Quản lý cá nhân</a></li>
+                    </ul>
+                </div>
+                <a class="dangxuat" href="https://localhost:7196/Home/Trangchu">
+                    Đăng xuất
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div>
+        @RenderBody();
+    </div>
+
+
+</body>
+</html>
+
+<style>
+
+
+    .khunghead {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative; /* Cần thiết để sử dụng position absolute cho các phần tử con */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+        width: 1440px;
+        height: 160px;
+    }
+
+
+    .image_logo {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .together {
+        position: absolute;
+        left: 0px;
+        top: 102px;
+        font-family: Baloo;
+        color: #0F8730;
+        font-size: 25px;
+    }
+
+    .xembaocao {
+        text-decoration: none;
+        margin: 65px 0 11px 0;
+        display: inline-block;
+        overflow-wrap: break-word;
+        font-family: 'Baloo', 'Roboto Condensed';
+        font-weight: 400;
+        font-size: 20px;
+        color: #0F8730;
+    }
+
+    .dangxuat {
+        text-decoration: none;
+        margin: 65px 0 11px 0;
+        display: inline-block;
+        overflow-wrap: break-word;
+        font-family: 'Baloo', 'Roboto Condensed';
+        font-weight: 400;
+        font-size: 20px;
+        color: #0F8730;
+    }
+
+    .quanly {
+        margin: 65px 0 11px 0;
+        display: inline-block;
+        overflow-wrap: break-word;
+        font-family: 'Baloo', 'Roboto Condensed';
+        font-weight: 400;
+        font-size: 20px;
+        color: #0F8730;
+    }
+
+        .quanly .Sub {
+            position: absolute;
+            width: 240px;
+            font-family: 'Barlow';
+            border: 1px solid #000000;
+            list-style-type: none; /* Ẩn kiểu đánh dấu */
+            padding: 0; /* Loại bỏ padding */
+            margin: 0;
+            display: none;
+        }
+
+        .quanly:hover .Sub {
+            display: block;
+        }
+
+        .quanly .Sub li {
+            padding: 3px 0;
+            padding-left: 3px;
+        }
+
+            .quanly .Sub li a {
+                text-decoration: none;
+                color: #000000;
+                font-size: 20px;
+            }
+
+                .quanly .Sub li a:hover {
+                    color: #0F8730;
+                }
+
+    a:active,
+    a:focus {
+        color: #000000;
+    }
+
+</style>

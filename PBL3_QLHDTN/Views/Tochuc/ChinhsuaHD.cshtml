@@ -1,0 +1,106 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutTochuc.cshtml";
+}
+@model PBL3_QLHDTN.Models.MotaHd
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thông tin Tổ chức</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Dẫn đường link đến các font chữ sử dụng trong trang -->
+    <!-- baloo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo&display=swap" rel="stylesheet">
+    <!-- barlow -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="container-thongtin">
+            <form method="post" action="/Tochuc/Chinhsuahoatdong">
+                <div class="form-group">
+                    <label for="TenHD" class="TenHD-label">Tên hoạt động:</label>
+                    <input type="text" id="TenHD" name="TenHD" class="TenHD-input" value="@ViewBag.TenHD">
+                </div>
+                <div class="form-group">
+                    <label for="DiaDiem" class="DiaDiem-label">Địa điểm:</label>
+                    <input type="text" id="DiaDiem" name="DiaDiem" class="DiaDiem-input" value="@ViewBag.DiaDiem">
+                </div>
+                <div class="form-group">
+                    <label for="MucTieu" class="MucTieu-label">Mục tiêu hoạt động:</label>
+                    <input type="text" id="MucTieu" name="MucTieu" class="MucTieu-input" value="@ViewBag.MucTieu">
+                </div>
+                <div class="form-group">
+                    <label for="ThoiGianBD" class="ThoiGianBD-label">Thời gian bắt đầu:</label>
+                    <input type="date" id="ThoiGianBD" name="ThoiGianBD" class="ThoiGianBD-input" value="@ViewBag.ThoiGianBD">
+                </div>
+                <div class="form-group">
+                    <label for="ThoiGianKT" class="ThoiGianKT-label">Thời gian kết thúc:</label>
+                    <input type="date" id="ThoiGianKT" name="ThoiGianKT" class="ThoiGianKT-input" value="@ViewBag.ThoiGianKT">
+                </div>
+                <button type="submit" class="xacnhan">Xác nhận</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<style>
+    .container {
+        max-width: 800px;
+        top: 130px;
+        margin: 0 auto;
+        position: relative;
+        padding: 20px;
+    }
+
+    .container-thongtin {
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+        .form-group label {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .form-group input {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+    .xacnhan {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #fff;
+        background-color: #000;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+        .xacnhan:hover {
+            background-color: #333;
+        }
+</style>

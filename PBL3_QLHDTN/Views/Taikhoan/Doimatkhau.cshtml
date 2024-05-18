@@ -1,0 +1,86 @@
+﻿@{
+    Layout = null;
+}
+@model PBL3_QLHDTN.Models.Taikhoan;
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng ký tham gia</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Dẫn đường link đến các font chữ sử dụng trong trang -->
+    <!-- baloo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo&display=swap" rel="stylesheet">
+    <!-- barlow -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form method="post">
+    <div class="container">
+        <div class="mkcu">
+            <label>Nhập mật khẩu cũ:</label>
+            <input type="password" name="Mkcu"/>
+        </div>
+        <div class="matkhaumoi">
+            <label>Nhập mật khẩu mới:</label>
+            <input type="password" name="matkhaumoi" />
+        </div>
+        <div class="Xacnhanmk">
+            <label>Nhập lại mật khẩu</label>
+            <input type="password" name="nhaplaimk" />
+        </div>
+        <button class="Doimk">Đổi mật khẩu</button>
+        <p class="TB">
+            @ViewBag.thongbao
+        </p>
+    </div>
+    </form>
+</body>
+<style>
+    .container {
+        width: 400px;
+        height: 170px;
+        margin: auto;
+        text-align: center;
+        padding: 0px;
+        background-color: rgba(118, 234, 150, 0.17);
+        display: block;
+        position: fixed; /* Sử dụng vị trí cố định */
+        top: 50%; /* Đặt top ở giữa màn hình */
+        left: 50%; /* Đặt left ở giữa màn hình */
+        transform: translate(-50%, -50%);
+        z-index: 999; /* Đảm bảo phần tử nằm trên các phần tử khác */
+    }
+    .mkcu{
+        position: absolute;
+        top:20px;
+        left:10px;
+    }
+    .matkhaumoi{
+        position: absolute;
+        top: 50px;
+        left: 10px;
+    }
+    .Xacnhanmk{
+        position: absolute;
+        top: 80px;
+        left: 10px;
+    }
+    .Doimk{
+        position: absolute;
+        top: 120px;
+        left: 200px;
+    }
+    .TB{
+        position: absolute;
+        top: 130px;
+        left: 100px;
+    }
+</style>

@@ -1,0 +1,50 @@
+﻿﻿@{
+    Layout = "~/Views/Shared/_layoutQTV.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Trang chủ</title>
+    <base href="https://localhost:7196/" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Baloo:wght@400&display=swap" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter Da 2:wght@400&display=swap" />
+</head>
+<body>
+    <div class="container ">
+        <div class="retangle1"></div>
+        <div class="KTTNV">Kết nối tình nguyện viên</div>
+    </div>
+
+</body>
+<style>
+    .container {
+        max-width: 1440px;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative; /* Cần thiết để sử dụng position absolute cho các phần tử con */
+    }
+
+    .retangle1 {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 1440px;
+        height: 680px;
+        background: linear-gradient(180deg, rgba(77, 227, 119, 0.36), #fff);
+    }
+
+    .KTTNV {
+        position: absolute;
+        left: 248px;
+        top: 331px;
+        width: 990px;
+        height: 129px;
+        font-size: 90px;
+        font-family: Baloo;
+    }
+</style>

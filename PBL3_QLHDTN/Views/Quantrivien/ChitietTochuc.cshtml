@@ -1,0 +1,363 @@
+﻿@model PBL3_QLHDTN.ViewModel.thongtinTochuc
+
+
+@{
+    Layout = "~/Views/Shared/_layoutQTV.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <base href="https://localhost:7196/" />
+    <title>Chi tiết thông tin tổ chức</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Baloo:wght@400&display=swap" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Inter Da 2:wght@400&display=swap" />
+</head>
+<body>
+    <form method="post" action="/Quantrivien/chitietTochuc">
+
+        <div class="container">
+            <label class="lb1">Chi tiết thông tin tổ chức</label>
+
+            <div class="dshoatdong">
+                <table class="tb" id="dshd" name="danhsachhd">
+                    <tr>
+                        <th>Tên tổ chức </th>
+                        @if (Model.Ten != null)
+                        {
+                            <td>@Model.Ten</td>
+                        }
+                        else
+                        {
+                            <td>Trống</td>
+                        }
+                    </tr>
+                    <tr>
+                        <th>Số lượng hoạt động</th>
+                        @if (Model.soluonghd != null)
+                        {
+                                <td>@Model.soluonghd</td>                            
+                        }
+                        else
+                        {
+                            <td>Trống</td>
+                        }
+                    </tr>
+                    <tr>
+                        <th>Số điện thoại</th>
+                        @if (Model.Sdt != null)
+                        {
+                            <td>@Model.Sdt</td>
+                        }
+                        else
+                        {
+                            <td>Trống</td>
+                        }
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        @if (Model.Email != null)
+                        {
+                            <td>@Model.Email</td>
+                        }
+                        else
+                        {
+                            <td>Trống</td>
+                        }
+                    </tr>
+                    <tr>
+                        <th>Địa chỉ </th>
+                        @if (Model.Diachi != null)
+                        {
+                            <td>@Model.Diachi</td>
+                        }
+                        else
+                        {
+                            <td>Không có chỉnh sửa</td>
+                        }
+                    </tr>
+
+                    <tr>
+                        <th>Giới thiệu</th>
+                        @if (Model.Gioithieu != null)
+                        {
+                            <td>@Model.Gioithieu</td>
+                        }
+                        else
+                        {
+                            <td>Trống</td>
+                        }
+                    </tr>
+
+                    <tr>
+                        <th>Thành tựu </th>
+                        @if (Model.Thanhtuu != null)
+                        {
+                            <td>@Model.Thanhtuu</td>
+                        }
+                        else
+                        {
+                            <td>Trống</td>
+                        }
+                    </tr>
+                    <tr>
+                        <th>Trạng thái tài khoản </th>
+                        @if (Model.Trangthai != null)
+                        {
+                            if (Model.Trangthai == true)
+                            {
+                                <td>Đang hoạt động</td>
+                            }
+                            else
+                            {
+                                <td>Đã bị khoá</td>
+                            }
+                        }
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+        <a href="@Url.Action("DSHDTochuc", "Quantrivien", new { idtc = Model.Idtochuc })" class="xem">Xem các hoạt động</a>
+        @if (Model.Trangthai == true)
+        {
+            <a href="@Url.Action("KhoataikhoanTC", "Quantrivien", new { id = Model.Idtochuc })" class="khoa">Khoá tài khoản</a>
+        }
+        else
+        {
+            <a href="@Url.Action("MotaikhoanTC", "Quantrivien", new { id = Model.Idtochuc })" class="mo">Gỡ khoá tài khoản</a>
+        }
+
+    </form>
+</body>
+</html>
+<style>
+    .mo {
+        position: absolute;
+        top: 300px;
+        left: 1450px;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'Barlow', sans-serif;
+        width: 150px;
+        border-radius: 15px;
+        height: 40px;
+        box-sizing: border-box;
+        color: #000; /* Đặt màu chữ */
+        display: inline-block; /* Đảm bảo thẻ a được hiển thị như một khối */
+        text-align: center; /* Căn giữa nội dung */
+        align-content: center;
+        background-color: #f0f0f0;
+    }
+
+        .mo:hover {
+            background: blue;
+        }
+
+    .khoa {
+        position: absolute;
+        top: 300px;
+        left: 1350px;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'Barlow', sans-serif;
+        width: 250px;
+        border-radius: 15px;
+        height: 40px;
+        box-sizing: border-box;
+        color: #000; /* Đặt màu chữ */
+        display: inline-block; /* Đảm bảo thẻ a được hiển thị như một khối */
+        text-align: center; /* Căn giữa nội dung */
+        align-content: center;
+        background-color: #f0f0f0;
+    }
+
+        .khoa:hover {
+            background: red;
+        }
+
+    .xem {
+        position: absolute;
+        top: 1030px;
+        left: 1300px;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'Barlow', sans-serif;
+        width: 250px;
+        border-radius: 15px;
+        height: 40px;
+        box-sizing: border-box;
+        color: #000; /* Đặt màu chữ */
+        display: inline-block; /* Đảm bảo thẻ a được hiển thị như một khối */
+        text-align: center; /* Căn giữa nội dung */
+        align-content: center;
+        background-color: #f0f0f0;
+    }
+
+        .xem:hover {
+            background: #0F8730;
+        }
+
+
+    .dshoatdong {
+        position: absolute;
+        top: 273px;
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 700px;
+        overflow-y: scroll;
+        font-size: 16px;
+    }
+
+    .tb {
+        border-collapse: collapse; /* Đảm bảo các ô không được tách biệt */
+    }
+
+    .dshoatdong th, .dshoatdong td {
+        padding: 6px 10px; /* Thêm padding cho các ô */
+        text-align: center; /* Căn giữa văn bản trong ô */
+        border: 1px solid #ddd; /* Đường viền cho các ô */
+        height: 50px; /* Thiết lập chiều cao cho các hàng */
+    }
+
+    .dshoatdong th {
+        background-color: #f2f2f2; /* Màu nền cho hàng tiêu đề */
+    }
+
+    .dshoatdong tr:nth-child(even) {
+        background-color: #f9f9f9; /* Màu nền cho các hàng chẵn */
+    }
+
+    .dshoatdong tr:hover {
+        background-color: #ddd; /* Màu nền khi hover trên hàng */
+    }
+
+    .dshoatdong th, .dshoatdong td {
+        border: 1px solid #ddd; /* Đường viền cho các ô */
+    }
+
+
+
+    .lb2 {
+        font-size: 40px;
+        position: absolute;
+        left: 550px;
+        top: 1000px;
+    }
+
+    .container {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative; /* Cần thiết để sử dụng position absolute cho các phần tử con */
+        height: 1500px;
+    }
+
+    .nhapdanhgia {
+        position: absolute;
+        left: 96px;
+        top: 960px;
+        width: 1248px;
+        height: 200px;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+
+    .lbdanhgia {
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .noidungdanhgia {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .danhgia {
+        width: 100%;
+        padding: 5px;
+        height: 50px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .nhapdanhgia button {
+        align-self: flex-end;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+        .nhapdanhgia button:hover {
+            background-color: #0056b3;
+        }
+
+    .lb1 {
+        position: absolute;
+        left: 500px;
+        top: 160px;
+        font-size: 40px;
+        font-family: Baloo;
+    }
+
+    .tb {
+        border-collapse: collapse; /* Đảm bảo các ô không được tách biệt */
+        width: 1248px;
+    }
+
+    .dshoatdong {
+        position: absolute;
+        left: 96px;
+        top: 273px;
+        width: 1248px;
+        max-height: 700px;
+        overflow-y: scroll;
+        font-size: 16px;
+    }
+
+        .dshoatdong th, .dshoatdong td {
+            padding: 6px 10px; /* Thêm padding cho các ô */
+            text-align: center; /* Căn giữa văn bản trong ô */
+            border: 1px solid #ddd; /* Đường viền cho các ô */
+            height: 50px; /* Thiết lập chiều cao cho các hàng */
+        }
+
+        .dshoatdong th {
+            background-color: #f2f2f2; /* Màu nền cho hàng tiêu đề */
+        }
+
+        .dshoatdong tr:nth-child(even) {
+            background-color: #f9f9f9; /* Màu nền cho các hàng chẵn */
+        }
+
+        .dshoatdong tr:hover {
+            background-color: #ddd; /* Màu nền khi hover trên hàng */
+        }
+
+        .dshoatdong th, .dshoatdong td {
+            border: 1px solid #ddd; /* Đường viền cho các ô */
+        }
+
+</style>

@@ -1,0 +1,191 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PBL3_QLHDTN
+build_property.RootNamespace = PBL3_QLHDTN
+build_property.ProjectDir = F:\Study\PBL3\PBL3_QLHDTN\PBL3_QLHDTN\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\Study\PBL3\PBL3_QLHDTN\PBL3_QLHDTN
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Canhan/Chinhsuathongtincanhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuaGFuXENoaW5oc3VhdGhvbmd0aW5jYW5oYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Canhan/chitietHoatdong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuaGFuXGNoaXRpZXRIb2F0ZG9uZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Canhan/Chitiethoatdongcanhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuaGFuXENoaXRpZXRob2F0ZG9uZ2Nhbmhhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Canhan/dangkythamgiaHD.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuaGFuXGRhbmdreXRoYW1naWFIRC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Canhan/Hienthithongtincanhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuaGFuXEhpZW50aGl0aG9uZ3RpbmNhbmhhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Canhan/Hienthithongtintochuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuaGFuXEhpZW50aGl0aG9uZ3RpbnRvY2h1Yy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Canhan/Hoatdongcanhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuaGFuXEhvYXRkb25nY2FuaGFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Canhan/Trangchucanhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuaGFuXFRyYW5nY2h1Y2FuaGFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Home/chitiet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjaGl0aWV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Home/Gioithieu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHaW9pdGhpZXUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Home/Trangchu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUcmFuZ2NodS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Quantrivien/ChitietTochuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbnRyaXZpZW5cQ2hpdGlldFRvY2h1Yy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Quantrivien/DSHDCanhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbnRyaXZpZW5cRFNIRENhbmhhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Quantrivien/DSHDTochuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbnRyaXZpZW5cRFNIRFRvY2h1Yy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Quantrivien/DSTNV.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbnRyaXZpZW5cRFNUTlYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Quantrivien/QuanlyCanhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbnRyaXZpZW5cUXVhbmx5Q2FuaGFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Quantrivien/QuanlyTochuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbnRyaXZpZW5cUXVhbmx5VG9jaHVjLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Quantrivien/thongtinCN.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbnRyaXZpZW5cdGhvbmd0aW5DTi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Quantrivien/Trangchuquantrivien.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbnRyaXZpZW5cVHJhbmdjaHVxdWFudHJpdmllbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Quantrivien/Xembaocao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUXVhbnRyaXZpZW5cWGVtYmFvY2FvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Shared/_LayoutCanhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDYW5oYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Shared/_LayoutQTV.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRRVFYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Shared/_LayoutTochuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRUb2NodWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Taikhoan/Baocao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpa2hvYW5cQmFvY2FvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Taikhoan/Dangkytaikhoan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpa2hvYW5cRGFuZ2t5dGFpa2hvYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Taikhoan/Dangnhap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpa2hvYW5cRGFuZ25oYXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Taikhoan/Doimatkhau.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpa2hvYW5cRG9pbWF0a2hhdS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Taikhoan/Nhapmkmoi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpa2hvYW5cTmhhcG1rbW9pLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Taikhoan/Quenmatkhau.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFpa2hvYW5cUXVlbm1hdGtoYXUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Tochuc/ChinhsuaHD.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9jaHVjXENoaW5oc3VhSEQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Tochuc/DSHD.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9jaHVjXERTSEQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Tochuc/DSTNV.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9jaHVjXERTVE5WLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Tochuc/Hienthithongtincanhan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9jaHVjXEhpZW50aGl0aG9uZ3RpbmNhbmhhbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Tochuc/suathongtinTochuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9jaHVjXHN1YXRob25ndGluVG9jaHVjLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Tochuc/TaoHD.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9jaHVjXFRhb0hELmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Tochuc/Themban.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9jaHVjXFRoZW1iYW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Tochuc/thongtinTochuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9jaHVjXHRob25ndGluVG9jaHVjLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Tochuc/Trangchutochuc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9jaHVjXFRyYW5nY2h1dG9jaHVjLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Study/PBL3/PBL3_QLHDTN/PBL3_QLHDTN/Views/Shared/_LayoutHome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRIb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-mbcx3u1m2h
